@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    width: 960px;
+    margin: auto;
+}
+
+footer
+{
+    text-align: center;
+    width: 100%;
+    float: left;
+}
