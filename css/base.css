@@ -5,6 +5,13 @@
 body{
     width: 960px;
     margin: auto;
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Lobster', cursive;
+    background-color: rgb(91, 200, 219);
+}
+main
+{
+    
 }
 
 footer
@@ -12,4 +19,6 @@ footer
     text-align: center;
     width: 100%;
     float: left;
+    padding: 20px;
+    background-color: rgb(77, 106, 201);
 }

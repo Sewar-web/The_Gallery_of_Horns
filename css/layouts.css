@@ -1,6 +1,8 @@
 h1
 {
     text-align: center;
+    background-color: rgb(77, 106, 201);
+    padding: 10px;
 }
 h2{
     font-size: 20px;
@@ -11,22 +13,28 @@ header
     text-align: center;
     align-items: center;
 }
-section
+div
 
 {
+    
     text-align: center;
     align-items: center;
-    height: 300px;
-    width: 200px;
-   float: left;
- border: 0.5px solid;
- margin:7px;
- overflow: visible;
+    height: 350px;
+    width: 220px;
+
+    border: 0.5px solid;
+    margin:7px;
+    overflow: visible;
 
  
 
 }
 
+section{
+  display: flex;
+  flex-wrap: wrap;
+
+}
 section img {
    
     width: 150px;
@@ -36,10 +44,18 @@ section img {
     
   }
     
-  
+  option
+  {
+    font-family: 'Lobster', cursive;
+  }
 
 
 p {
     font-size: 15px;
     
+}
+#select2
+{
+  text-align: center;
+    align-items: center;
 }
