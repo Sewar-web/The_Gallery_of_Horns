@@ -36,7 +36,7 @@ function getData( url )
 
       arrayName.forEach( element => {
         $( '#select' ).append(
-          `  <option value="${element}">${element}</option>`
+          `<option value="${element}">${element}</option>`
         );
       } );
 
@@ -72,34 +72,7 @@ function callPage2()
   console.log( 'aaaaaaaaaaaaaaaaaaaaaaaaaaa' );
 
 }
-
-// let arrKeyword=[];
-// arrKeyword.push( this.keyword );
-
-
-//
-
-
-// let dataAll=[];
-// function Horner( hornerinfo ) {
-//   this.image_url = hornerinfo.image_url;
-//   this.title = hornerinfo.title;
-//   this.description = hornerinfo.description;
-//   this.keyword = hornerinfo.keyword;
-//   this.horns=hornerinfo.horns;
-//   dataAll.push( this );
-
-// }
-
-
-
-
-///////////fliter///////////////
-
-
-////////////////////////functions sort////////////////////
-
-$( '#sort' ).on( 'click' , callBackHonrs );
+$( '#sort' ).on( 'click' ,callBackHonrs );
 function callBackHonrs( event )
 {
   let value=event.target.value;
@@ -108,13 +81,14 @@ function callBackHonrs( event )
     else if( a[value] > b[value] ) return 1;
     else return 0;
   } );
-  // $( '#select' ).empty();
-  dataAll.forEach( item => item.toHorner );
-
-  console.log( 'hhhhhhhhhhhhhhhhhh' );
-  console.log( dataAll );
-  console.log( value );
+  dataAll.forEach( item => item.toHorner() );
+  console.log( dataAll ) ;
 }
+
+//   console.log( 'hhhhhhhhhhhhhhhhhh' );
+//   console.log( dataAll );
+//   console.log( value );
+// }
 
 $( 'select' ).on( 'change', function () {
   let itemSelect = this.value;
@@ -123,6 +97,16 @@ $( 'select' ).on( 'change', function () {
   $( `.${itemSelect}` ).show();
 
 } );
+
+
+
+///////////fliter///////////////
+
+
+////////////////////////functions sort////////////////////
+
+
+
 
 
 
@@ -138,15 +122,4 @@ $( 'select' ).on( 'change', function () {
 //   hornsClone.attr( 'class', this.keyword );
 //   $( 'main' ).append( hornsClone );
 // };
-
-// $.ajax( '../data/page-1.json' )
-//   .then( hornerData => {
-//     console.log( hornerData );
-//     hornerData.forEach( val => {
-//       let newHorner = new Horner( val );
-//       // newHorner.renderImage();
-//       newHorner.toHorner();
-//     } );
-
-//   } );
 
