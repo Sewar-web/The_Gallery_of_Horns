@@ -1,8 +1,9 @@
 h1
 {
     text-align: center;
-    background-color: rgb(77, 106, 201);
-    padding: 10px;
+    /* background-color: rgb(77, 106, 201); */
+    background-color:  rgb(235, 198, 204);
+        padding: 10px;
 }
 h2{
     font-size: 20px;
@@ -30,6 +31,8 @@ div
 
 }
 
+
+
 section{
   display: flex;
   flex-wrap: wrap;
@@ -37,8 +40,12 @@ section{
 }
 section img {
    
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 10px 10px 5px  rgb(121, 187, 241);
+    -moz-box-shadow: 10px 10px 5px   rgb(121, 187, 241);
+    -webkit-box-shadow: 10px 10px 5px   rgb(121, 187, 241);
+    -khtml-box-shadow: 10px 10px 5px   rgb(121, 187, 241);
    
    
     

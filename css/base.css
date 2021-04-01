@@ -7,8 +7,13 @@ body{
     margin: auto;
     /* font-family: 'Pacifico', cursive; */
     font-family: 'Lobster', cursive;
-    background-color: rgb(91, 200, 219);
-}
+    /* background-color: rgb(235, 198, 204); */
+    background-image: url('https://pbblogassets.s3.amazonaws.com/uploads/2018/10/22074923/pink-sky-cover.jpg');
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+} 
 main
 {
     
@@ -20,5 +25,15 @@ footer
     width: 100%;
     float: left;
     padding: 20px;
-    background-color: rgb(77, 106, 201);
+    background-color: rgb(235, 198, 204);
+    /* background-color: rgb(77, 106, 201); */
+}
+
+#select
+{
+    background-color:  rgb(235, 198, 204);
+}
+#sort
+{
+    background-color:  rgb(235, 198, 204);
 }
