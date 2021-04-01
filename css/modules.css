@@ -1,5 +1,7 @@
-#page1 , #page2
+#page2 , #page1
 {
-display: block;
-
+    display: block;
+    background-color: rgb(243, 200, 207);
+    width: 90px;
+   align-items: center;
 }
