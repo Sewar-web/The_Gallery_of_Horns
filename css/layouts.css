@@ -36,6 +36,7 @@ div
 section{
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 
 }
 section img {
@@ -46,6 +47,7 @@ section img {
     -moz-box-shadow: 10px 10px 5px   rgb(121, 187, 241);
     -webkit-box-shadow: 10px 10px 5px   rgb(121, 187, 241);
     -khtml-box-shadow: 10px 10px 5px   rgb(121, 187, 241);
+   
    
    
     
